@@ -8,7 +8,11 @@
 
 		<a-scene stats embedded arjs="trackingMethod: best;debugUIEnabled:false"> 
 		<a-marker preset="hiro"> 
-			<a-box position="0 0 0" rotation="0 0 0"  material="color:blue;"></a-box>
+			<a-box position="0 0 0" rotation="0 0 0"  material="color:blue;">
+				<a-entity> <a-animation attribute="position" dur="1000" from="1 0 0" to="0 0 1"> </a-animation> </a-entity>
+				
+				
+			</a-box>
 		</a-marker>
 		<a-entity camera></a-entity> 
 
