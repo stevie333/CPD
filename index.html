@@ -9,7 +9,9 @@
 		<a-scene stats embedded arjs="trackingMethod: best;debugUIEnabled:false"> 
 		<a-marker preset="hiro"> 
 			<a-box position="0 1 0" rotation="0 0 0"  material="color:blue;">
-			<a-animation attribute="rotation" dur="2000" from="0 0 0" to="360 0 0" repeat="indefinite"></a-animation>
+			<a-entity> <a-animation attribute="rotation" dur="2000"
+			easing="linear" from="0 0 0" to="0 360 0" repeat="indefinite"></aanimation> <a-entity rotation="0 0 25"> <a-sphere position="2 0
+			2"></a-sphere> </a-entity> </a-entity>
 			</a-box>
 			
 		</a-marker>
